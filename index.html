@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COSMAS – Vente de matériaux de construction au Bénin</title>
+  <meta name="description" content="COSMAS : ciment, fer à béton, briques, sable, parpaings et tôles. Matériaux fiables, durables et à prix compétitifs, livrés partout au Bénin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ SPRITE D'ICÔNES ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-chev-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l2 4-1 10H5L4 11z"/><path d="M9 7V4h6v3"/><line x1="9" y1="14" x2="15" y2="14"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></symbol>
+    <symbol id="i-block" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" rx="1"/><path d="M12 6v13M2 12.5h20"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M15 8.5h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4H9"/><line x1="12" y1="6.5" x2="12" y2="8.5"/><line x1="12" y1="16.5" x2="12" y2="18"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></symbol>
+    <symbol id="i-expert" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/><path d="M10 8h4"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-home" viewBox="0 0 48 44"><path d="M24 3 2 22h6v19h32V22h6L24 3z" fill="currentColor" stroke="none"/><rect x="19" y="26" width="10" height="15" rx="1" fill="#f5b400" stroke="none"/></symbol>
+
+    <!-- Logo -->
+    <symbol id="logo-mark" viewBox="0 0 48 44">
+      <path d="M24 2 2 21h6.5L24 8l15.5 13H46L24 2z" fill="#f5b400"/>
+      <path d="M9 22 24 9.5 39 22v19H9V22z" fill="#0b2a55"/>
+      <path d="M17 33a7 7 0 0 1 14 0z" fill="#f5b400"/>
+      <circle cx="24" cy="26" r="3.6" fill="#f5b400"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__item"><svg class="icon"><use href="#i-truck"/></svg><span>Livraison rapide sur tout le Bénin</span></div>
+    <div class="topbar__item topbar__item--quality"><svg class="icon"><use href="#i-shield-check"/></svg><span>Qualité garantie</span></div>
+    <div class="topbar__right">
+      <a class="topbar__item" href="tel:+22901234567">
+        <svg class="icon"><use href="#i-phone"/></svg><span>Service client : +229 01 23 45 67</span>
+      </a>
+      <div class="lang dropdown" id="lang">
+        <button class="lang__btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="flag" aria-hidden="true"></span><strong>FR</strong>
+          <svg class="icon icon--sm"><use href="#i-chev-down"/></svg>
+        </button>
+        <ul class="dropdown__menu">
+          <li><button type="button" data-lang="FR">Français</button></li>
+          <li><button type="button" data-lang="EN">English</button></li>
+        </ul>
+      </div>
+      <a class="topbar__user" href="#" aria-label="Mon compte"><svg class="icon"><use href="#i-user"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#accueil" aria-label="COSMAS - Accueil">
+      <img class="logo__img" src="images/logo.jpeg" alt="Logo COSMAS" width="56" height="56">
+      <span class="logo__text">
+        <span class="logo__name">COSMAS</span>
+        <span class="logo__tag">Osez l'excellence</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <ul class="nav__list">
+        <li><a class="nav__link is-active" href="#accueil">Accueil</a></li>
+        <li class="has-dropdown dropdown">
+          <button class="nav__link" type="button" aria-haspopup="true" aria-expanded="false">
+            Produits <svg class="icon icon--sm"><use href="#i-chev-down"/></svg>
+          </button>
+          <ul class="dropdown__menu">
+            <li><a href="#produits">Ciment</a></li>
+            <li><a href="#produits">Fer à béton</a></li>
+            <li><a href="#produits">Briques</a></li>
+            <li><a href="#produits">Sables &amp; Graviers</a></li>
+            <li><a href="#produits">Parpaings</a></li>
+            <li><a href="#produits">Tôles &amp; Couvertures</a></li>
+          </ul>
+        </li>
+        <li><a class="nav__link" href="#pourquoi">À propos</a></li>
+        <li><a class="nav__link" href="#offre">Nos réalisations</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form class="hsearch" id="headerSearch" role="search">
+      <input type="search" placeholder="Rechercher un produit..." aria-label="Rechercher un produit">
+      <button type="submit" aria-label="Rechercher"><svg class="icon"><use href="#i-search"/></svg></button>
+    </form>
+
+    <div class="header__actions">
+      <a class="hicon" href="#" aria-label="Panier">
+        <svg class="icon icon--fill"><use href="#i-cart"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </a>
+      <button class="hicon" type="button" id="wishHeader" aria-label="Favoris">
+        <svg class="icon icon--fill"><use href="#i-heart"/></svg>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="accueil">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg"><img src="images/hero.jpg" alt="Conducteur de travaux sur un chantier" loading="eager"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="tag">Vente de matériaux de construction</span>
+        <h1>Construisez vos rêves<br><span>avec des matériaux de qualité</span></h1>
+        <p>Nous vous accompagnons dans tous vos projets de construction avec des matériaux fiables, durables et à des prix compétitifs.</p>
+
+        <form class="hero__search" id="heroSearch" role="search">
+          <svg class="icon"><use href="#i-search"/></svg>
+          <input type="search" placeholder="Rechercher un produit (ciment, fer, brique...)" aria-label="Rechercher un produit">
+          <button class="btn btn--yellow" type="submit">Voir les produits <svg class="icon icon--sm"><use href="#i-arrow"/></svg></button>
+        </form>
+
+        <ul class="hero__features">
+          <li><svg class="icon"><use href="#i-shield-check"/></svg><span><strong>Produits de qualité</strong>100% garantis</span></li>
+          <li><svg class="icon"><use href="#i-coin"/></svg><span><strong>Prix compétitifs</strong>sur le marché</span></li>
+          <li><svg class="icon"><use href="#i-truck"/></svg><span><strong>Livraison rapide</strong>à domicile</span></li>
+          <li><svg class="icon"><use href="#i-expert"/></svg><span><strong>Conseils d'experts</strong>à votre écoute</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATÉGORIES ============ -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Nos catégories</span>
+          <h2>Trouvez facilement ce dont vous avez besoin</h2>
+          <p class="section__sub">Découvrez notre large gamme de matériaux de construction pour tous vos projets.</p>
+        </div>
+        <a class="link-more" href="#produits">Voir toutes les catégories <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="cats">
+        <a class="cat reveal" href="#produits">
+          <div class="cat__img"><img src="images/cat-ciment.jpg" alt="Sacs de ciment" loading="lazy"></div>
+          <div class="cat__body"><svg class="icon"><use href="#i-bag"/></svg><h3>Ciment</h3><span>Voir les produits <svg class="icon icon--xs"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="cat reveal" href="#produits">
+          <div class="cat__img"><img src="images/cat-fer.jpg" alt="Fers à béton" loading="lazy"></div>
+          <div class="cat__body"><svg class="icon"><use href="#i-layers"/></svg><h3>Fer à béton</h3><span>Voir les produits <svg class="icon icon--xs"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="cat reveal" href="#produits">
+          <div class="cat__img"><img src="images/cat-briques.jpg" alt="Briques rouges" loading="lazy"></div>
+          <div class="cat__body"><svg class="icon"><use href="#i-box"/></svg><h3>Briques</h3><span>Voir les produits <svg class="icon icon--xs"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="cat reveal" href="#produits">
+          <div class="cat__img"><img src="images/cat-sables.jpg" alt="Tas de sable" loading="lazy"></div>
+          <div class="cat__body"><svg class="icon"><use href="#i-grid"/></svg><h3>Sables &amp; Graviers</h3><span>Voir les produits <svg class="icon icon--xs"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="cat reveal" href="#produits">
+          <div class="cat__img"><img src="images/cat-parpaings.jpg" alt="Parpaings" loading="lazy"></div>
+          <div class="cat__body"><svg class="icon"><use href="#i-block"/></svg><h3>Parpaings</h3><span>Voir les produits <svg class="icon icon--xs"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="cat reveal" href="#produits">
+          <div class="cat__img"><img src="images/cat-toles.jpg" alt="Tôles de couverture" loading="lazy"></div>
+          <div class="cat__body"><svg class="icon"><use href="#i-layers"/></svg><h3>Tôles &amp; Couvertures</h3><span>Voir les produits <svg class="icon icon--xs"><use href="#i-arrow"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEILLEURES VENTES ============ -->
+  <section class="section section--tight" id="produits">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Produits phares</span>
+          <h2>Nos meilleures ventes</h2>
+          <p class="section__sub">Des matériaux sélectionnés pour la qualité et la durabilité de vos constructions.</p>
+        </div>
+        <div class="arrows">
+          <button type="button" class="arrow" id="prev" aria-label="Précédent"><svg class="icon icon--sm"><use href="#i-chev-left"/></svg></button>
+          <button type="button" class="arrow" id="next" aria-label="Suivant"><svg class="icon icon--sm"><use href="#i-chev-right"/></svg></button>
+        </div>
+      </div>
+
+      <div class="slider" id="slider">
+        <article class="product" data-name="Ciment Portland 42.5">
+          <button class="product__wish" type="button" aria-label="Ajouter aux favoris"><svg class="icon"><use href="#i-heart"/></svg></button>
+          <div class="product__img"><img src="images/prod-ciment.png" alt="Ciment Portland 42.5" loading="lazy"></div>
+          <div class="product__body">
+            <h3>Ciment Portland 42.5</h3>
+            <p class="product__sub">50 kg</p>
+            <p class="product__price">4 800 FCFA</p>
+            <p class="product__rating"><span class="stars" style="--r:5" aria-label="5 sur 5">★★★★★</span> <small>(124)</small></p>
+            <button class="btn btn--orange btn--block add" type="button"><svg class="icon icon--sm"><use href="#i-cart"/></svg>Ajouter au panier</button>
+          </div>
+        </article>
+
+        <article class="product" data-name="Fer à béton 12 mm">
+          <button class="product__wish" type="button" aria-label="Ajouter aux favoris"><svg class="icon"><use href="#i-heart"/></svg></button>
+          <div class="product__img"><img src="images/prod-fer.png" alt="Fer à béton 12 mm" loading="lazy"></div>
+          <div class="product__body">
+            <h3>Fer à béton 12 mm</h3>
+            <p class="product__sub">Barre de 12 mètres</p>
+            <p class="product__price">6 500 FCFA</p>
+            <p class="product__rating"><span class="stars" style="--r:5" aria-label="5 sur 5">★★★★★</span> <small>(98)</small></p>
+            <button class="btn btn--orange btn--block add" type="button"><svg class="icon icon--sm"><use href="#i-cart"/></svg>Ajouter au panier</button>
+          </div>
+        </article>
+
+        <article class="product" data-name="Brique de construction">
+          <button class="product__wish" type="button" aria-label="Ajouter aux favoris"><svg class="icon"><use href="#i-heart"/></svg></button>
+          <div class="product__img"><img src="images/prod-brique.png" alt="Brique de construction" loading="lazy"></div>
+          <div class="product__body">
+            <h3>Brique de construction</h3>
+            <p class="product__sub">20 x 10 x 5 cm</p>
+            <p class="product__price">250 FCFA</p>
+            <p class="product__rating"><span class="stars" style="--r:5" aria-label="5 sur 5">★★★★★</span> <small>(76)</small></p>
+            <button class="btn btn--orange btn--block add" type="button"><svg class="icon icon--sm"><use href="#i-cart"/></svg>Ajouter au panier</button>
+          </div>
+        </article>
+
+        <article class="product" data-name="Sable lavé">
+          <button class="product__wish" type="button" aria-label="Ajouter aux favoris"><svg class="icon"><use href="#i-heart"/></svg></button>
+          <div class="product__img"><img src="images/prod-sable.png" alt="Sable lavé" loading="lazy"></div>
+          <div class="product__body">
+            <h3>Sable lavé</h3>
+            <p class="product__sub">Camion de 10 m³</p>
+            <p class="product__price">45 000 FCFA</p>
+            <p class="product__rating"><span class="stars" style="--r:4" aria-label="4 sur 5">★★★★★</span> <small>(62)</small></p>
+            <button class="btn btn--orange btn--block add" type="button"><svg class="icon icon--sm"><use href="#i-cart"/></svg>Ajouter au panier</button>
+          </div>
+        </article>
+
+        <article class="product" data-name="Parpaing creux">
+          <button class="product__wish" type="button" aria-label="Ajouter aux favoris"><svg class="icon"><use href="#i-heart"/></svg></button>
+          <div class="product__img"><img src="images/prod-parpaing.png" alt="Parpaing creux" loading="lazy"></div>
+          <div class="product__body">
+            <h3>Parpaing creux</h3>
+            <p class="product__sub">15 x 20 x 40 cm</p>
+            <p class="product__price">350 FCFA</p>
+            <p class="product__rating"><span class="stars" style="--r:4.5" aria-label="4,5 sur 5">★★★★★</span> <small>(89)</small></p>
+            <button class="btn btn--orange btn--block add" type="button"><svg class="icon icon--sm"><use href="#i-cart"/></svg>Ajouter au panier</button>
+          </div>
+        </article>
+      </div>
+      <p class="empty" id="empty" hidden>Aucun produit ne correspond à votre recherche.</p>
+    </div>
+  </section>
+
+  <!-- ============ OFFRE SPÉCIALE ============ -->
+  <section class="container" id="offre">
+    <div class="promo">
+      <div class="promo__content">
+        <span class="promo__tag">Offre spéciale</span>
+        <h2>Des matériaux de qualité<br><span>à prix imbattables !</span></h2>
+        <p>Profitez de nos meilleurs tarifs pour vos projets de construction.</p>
+        <a class="btn btn--yellow btn--pill" href="#produits">Découvrir nos offres <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="promo__media"><img src="images/promo.png" alt="Matériaux de construction et casque de chantier" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ============ POURQUOI NOUS ============ -->
+  <section class="section" id="pourquoi">
+    <div class="container">
+      <span class="eyebrow">Pourquoi nous choisir ?</span>
+      <h2>Votre partenaire de confiance</h2>
+
+      <div class="why">
+        <ul class="why__list">
+          <li class="why__item">
+            <span class="why__ico"><svg class="icon"><use href="#i-expert"/></svg></span>
+            <div><h3>Matériaux de qualité</h3><p>Des produits fiables et durables.</p></div>
+          </li>
+          <li class="why__item">
+            <span class="why__ico"><svg class="icon"><use href="#i-truck"/></svg></span>
+            <div><h3>Livraison rapide</h3><p>Sur tout le territoire béninois.</p></div>
+          </li>
+          <li class="why__item">
+            <span class="why__ico"><svg class="icon"><use href="#i-coin"/></svg></span>
+            <div><h3>Prix compétitifs</h3><p>Le meilleur rapport qualité-prix.</p></div>
+          </li>
+          <li class="why__item">
+            <span class="why__ico"><svg class="icon"><use href="#i-headset"/></svg></span>
+            <div><h3>Service client</h3><p>Une équipe disponible et à l'écoute.</p></div>
+          </li>
+        </ul>
+
+        <a class="why__cta" href="#contact">
+          <svg class="why__house" viewBox="0 0 48 44"><use href="#i-home"/></svg>
+          <span>Ensemble, bâtissons un avenir plus solide !</span>
+          <span class="why__go"><svg class="icon icon--sm"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="logo logo--light" href="#accueil" aria-label="COSMAS - Accueil">
+        <img class="logo__img" src="images/logo.jpeg" alt="Logo COSMAS" width="56" height="56">
+        <span class="logo__text">
+          <span class="logo__name">COSMAS</span>
+          <span class="logo__tag">Osez l'excellence</span>
+        </span>
+      </a>
+      <p>Spécialisés dans la vente de matériaux de construction, nous mettons à votre disposition des produits de qualité pour tous vos projets, du petit chantier aux grands travaux.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Liens utiles</h4>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#produits">Produits</a></li>
+        <li><a href="#pourquoi">À propos</a></li>
+        <li><a href="#offre">Nos réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Nos catégories</h4>
+      <ul>
+        <li><a href="#produits">Ciment</a></li>
+        <li><a href="#produits">Fer à béton</a></li>
+        <li><a href="#produits">Briques</a></li>
+        <li><a href="#produits">Sables &amp; Graviers</a></li>
+        <li><a href="#produits">Parpaings</a></li>
+        <li><a href="#produits">Tôles &amp; Couvertures</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col footer__news">
+      <h4>Newsletter</h4>
+      <p>Recevez nos offres et actualités</p>
+      <form class="news" id="newsletter" novalidate>
+        <input type="email" placeholder="Votre adresse email" aria-label="Votre adresse email" required>
+        <button type="submit" aria-label="S'abonner"><svg class="icon icon--sm"><use href="#i-send"/></svg></button>
+      </form>
+      <p class="news__msg" id="newsMsg" role="status" aria-live="polite"></p>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg class="icon icon--fill"><use href="#i-facebook"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg class="icon icon--fill"><use href="#i-youtube"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>© <span id="year">2026</span> COSMAS. Tous droits réservés.</p>
+      <ul>
+        <li><a href="#">CGV</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">Mentions légales</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
